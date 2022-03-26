@@ -38,24 +38,7 @@ public class PatientController {
 		return "Mysoft Api ";
 	}
 	
-//	@PostMapping("/patientAdd")
-//	public ResponseEntity<?> save(@ModelAttribute Patient entity ) {
-//		Map<String, Object> map = new HashMap<>();
-//		try {
-//
-//			Patient patient = repo.save(entity);
-//			map.put("message", "Patient successfully saved");
-//			map.put("data", patient);
-//			map.put("statusCode", 200);
-//			return ResponseEntity.ok(map);
-//		} catch (Exception e) {
-//			e.printStackTrace();
-//			map.put("message", "Patient saved failed");
-//			map.put("data", null);
-//			map.put("statusCode", 400);
-//			return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(map);
-//		}
-//	}
+
 	
 	@PostMapping("/patientAdd")
 	public ResponseEntity<?> save(@ModelAttribute Patient entity, @RequestParam("file") MultipartFile file) {

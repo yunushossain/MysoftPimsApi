@@ -24,7 +24,7 @@ public class InformationController {
 	@Autowired
 	private InformationRepository informationRepository;
 	
-	@PostMapping("/informationAdd")
+	@PostMapping("/familyMemberAdd")
 	public ResponseEntity<?> save(@RequestBody Information entity) {
 		Map<String, Object> map = new HashMap<>();
 		try {
@@ -42,7 +42,7 @@ public class InformationController {
 		}
 	}
 
-	@GetMapping("/getAllInformation")
+	@GetMapping("/getAllfamilyMember")
 	public ResponseEntity<?> getInformation() {
 		Map<String, Object> map = new HashMap<>();
 		try {
